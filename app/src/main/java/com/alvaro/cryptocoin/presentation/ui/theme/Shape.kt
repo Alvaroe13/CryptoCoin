@@ -1,4 +1,4 @@
-package com.alvaro.cryptocoin.ui.theme
+package com.alvaro.cryptocoin.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

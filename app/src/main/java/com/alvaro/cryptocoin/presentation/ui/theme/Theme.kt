@@ -1,4 +1,4 @@
-package com.alvaro.cryptocoin.ui.theme
+package com.alvaro.cryptocoin.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
