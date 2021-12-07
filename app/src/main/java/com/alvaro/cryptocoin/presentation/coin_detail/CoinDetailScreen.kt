@@ -54,28 +54,34 @@ fun CoinDetailScreen(
                                 .align(CenterVertically)
                                 .weight(2f)
                         )
-                        Spacer(modifier = Modifier.height(15.dp))
-                        Text(
-                            text = "Tags",
-                            style = MaterialTheme.typography.h3
-                        )
-                        Spacer(modifier = Modifier.height(15.dp))
-                        FlowRow(
-                            mainAxisSpacing = 10.dp,
-                            crossAxisSpacing = 10.dp,
-                            modifier = Modifier.fillMaxWidth()
-                        ) {
-                            coin.tags.forEach { tag ->
-                                CoinTag(tag)
-                            }
-                        }
-                        Spacer(modifier = Modifier.height(15.dp))
-                        Text(
-                            text = "Team members",
-                            style = MaterialTheme.typography.h3
-                        )
-                        Spacer(modifier = Modifier.height(15.dp))
+
                     }
+                    Spacer(modifier = Modifier.height(15.dp))
+                    Text(
+                        text = coin.description,
+                        style = MaterialTheme.typography.body2
+                    )
+                    Spacer(modifier = Modifier.height(15.dp))
+                    Text(
+                        text = "Tags",
+                        style = MaterialTheme.typography.h3
+                    )
+                    Spacer(modifier = Modifier.height(15.dp))
+                    FlowRow(
+                        mainAxisSpacing = 10.dp,
+                        crossAxisSpacing = 10.dp,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        coin.tags.forEach { tag ->
+                            CoinTag(tag)
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(15.dp))
+                    Text(
+                        text = "Team members",
+                        style = MaterialTheme.typography.h3
+                    )
+                    Spacer(modifier = Modifier.height(15.dp))
 
                 }
 

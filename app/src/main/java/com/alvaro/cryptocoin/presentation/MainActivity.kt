@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.alvaro.cryptocoin.common.Constants
 import com.alvaro.cryptocoin.presentation.coin_detail.CoinDetailScreen
 import com.alvaro.cryptocoin.presentation.coin_list.CoinListScreen
 import com.alvaro.cryptocoin.presentation.ui.theme.CryptoCoinTheme
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
                         }
 
                         composable(
-                            route = Screen.CoinDetailScreen.route + "/{coinId}"
+                            route = Screen.CoinDetailScreen.route + "/{${Constants.COIN_ID_KEY}}"
                         ){
                             CoinDetailScreen()
                         }
