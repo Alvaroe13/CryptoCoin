@@ -1,4 +1,4 @@
-package com.alvaro.cryptocoin.domain.repository
+package com.alvaro.cryptocoin.data.remote
 
 import com.alvaro.cryptocoin.data.remote.dto.CoinDetailDto
 import com.alvaro.cryptocoin.data.remote.dto.CoinDto
@@ -12,6 +12,5 @@ interface CoinPaprikaApi {
 
     @GET("/v1/coins/{coinId}")
     suspend fun getCoinDetails(@Path("coinId") coinId: String): CoinDetailDto
-
 
 }
